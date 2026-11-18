@@ -1,0 +1,47 @@
+EVIDENCIAS F0 — OrçaClima
+coletado em: 2026-11-18T15:42:14Z (UTC)
+diretorio: /data/data/com.termux/files/home/criador-universal/projetos/orcaclima
+
+== ambiente ==
+node: v24.22.3
+python: Python 3.14.10
+
+== testes do motor ==
+ℹ tests 10
+ℹ pass 10
+ℹ fail 0
+
+== proposta-modelo ==
+arquivo: amostra/proposta-exemplo.pdf
+md5: b842f4ba3ed87a440ede1fc1aaad22df
+bytes: 3837
+  arquivo: amostra/proposta-exemplo.pdf
+  páginas: 1
+  blocos de texto: 62
+  caracteres extraídos: 1834
+  início: DOCUMENTO DE EXEMPLO — EMPRESA E CLIENTE FICTÍCIOS. NÃO É UMA PROPOSTA REAL. Clima Frio Instalações Empresa fictícia usada como demonstração  ·  CNPJ 00.000.000/0001-00  
+  OK: layout dentro da folha e blocos obrigatórios presentes
+
+== paginas publicadas (HTTP) ==
+  / -> HTTP 200
+  /amostra/proposta-exemplo.pdf -> HTTP 200
+  /sitemap.xml -> HTTP 200
+  /robots.txt -> HTTP 200
+  /e2b7c6a70679be9c9b4baa52559b88a9.txt -> HTTP 200
+
+== integridade do PDF servido ==
+  md5 local:    b842f4ba3ed87a440ede1fc1aaad22df
+  md5 servido:  b842f4ba3ed87a440ede1fc1aaad22df
+
+== contadores de demanda (abacus) ==
+  visita: {"error":"Failed to get data. Try again later."}
+  amostra: {"error":"Failed to get data. Try again later."}
+  pedido: {"error":"Failed to get data. Try again later."}
+
+== repositorio ==
+  visibilidade: public | pages: true
+  ultimo commit local: d616cac Contadores de demanda em namespace limpo para F0
+
+== financeiro ==
+  painel gerado: /data/data/com.termux/files/home/criador-universal/projetos/orcaclima/financeiro/painel.html
+  capital=R$ 100,00 despesas=R$ 0,00 receita=R$ 0,00 lucro=R$ 0,00 saldo=R$ 100,00

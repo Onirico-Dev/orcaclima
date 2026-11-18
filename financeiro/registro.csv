@@ -1,0 +1,5 @@
+data,tipo,descricao,valor,status,comprovante
+2026-11-18,capital,Capital autorizado pelo operador,100.00,disponivel,declaracao do operador
+2026-11-18,despesa,Hospedagem do site (GitHub Pages gratuito),0.00,nao_aplicavel,https://github.com/Onirico-Dev/orcaclima
+2026-11-18,despesa,Contador publico de visitas (abacus, gratuito),0.00,nao_aplicavel,https://abacus.jasoncameron.dev
+2026-11-18,despesa,Pacote pdfkit (biblioteca gratuita),0.00,nao_aplicavel,package.json
