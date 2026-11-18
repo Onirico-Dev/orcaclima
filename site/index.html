@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OrçaClima — proposta pronta para empresas de ar-condicionado</title>
+<meta name="description" content="Modelo de proposta comercial, tabela de preços e contrato de manutenção para empresas de instalação e manutenção de ar-condicionado. Gerador offline que funciona no celular e no computador.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://onirico-dev.github.io/orcaclima/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OrçaClima — a proposta que fecha o serviço">
+<meta property="og:description" content="Proposta com sua marca, tabela de preços e contrato de manutenção para empresas de ar-condicionado.">
+<meta property="og:url" content="https://onirico-dev.github.io/orcaclima/">
+<style>
+  :root{
+    --azul:#0B3C5D; --azul-claro:#1D6A96; --texto:#1B2A33; --cinza:#5A6B75;
+    --linha:#D8E2E8; --fundo:#F4F7F9; --branco:#fff; --verde:#1E6F50; --vermelho:#B03A2E;
+    --raio:10px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--branco); color:var(--texto);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:17px;
+  }
+  .wrap{width:100%;max-width:720px;margin:0 auto;padding:0 20px}
+  header{background:var(--azul);color:#fff;padding:34px 0 30px}
+  .marca{font-size:14px;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-bottom:14px}
+  h1{font-size:29px;line-height:1.22;margin:0 0 14px;font-weight:800;letter-spacing:-.01em}
+  header p{margin:0;font-size:17px;opacity:.92;max-width:34em}
+  .faixa{background:#FFF4E5;border-bottom:1px solid #F0D8B8;color:#7A4B12;font-size:13.5px;padding:9px 0}
+  .faixa .wrap{display:flex;gap:8px;align-items:flex-start}
+  main{padding:34px 0 10px}
+  h2{font-size:21px;margin:38px 0 12px;letter-spacing:-.01em}
+  h3{font-size:16.5px;margin:22px 0 6px}
+  p{margin:0 0 14px}
+  .lista{margin:0 0 16px;padding:0;list-style:none}
+  .lista li{position:relative;padding-left:26px;margin-bottom:9px}
+  .lista li::before{content:"";position:absolute;left:4px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--azul-claro)}
+  .lista.neg li::before{background:var(--vermelho)}
+  .cartao{border:1px solid var(--linha);border-radius:var(--raio);padding:20px;margin:16px 0;background:var(--branco)}
+  .cartao.destaque{border-color:var(--azul-claro);box-shadow:0 2px 0 rgba(11,60,93,.06)}
+  .btn{
+    display:block;text-align:center;text-decoration:none;font-weight:700;font-size:17px;
+    padding:16px 18px;border-radius:9px;margin:12px 0;border:2px solid transparent;
+  }
+  .btn-primario{background:var(--azul);color:#fff}
+  .btn-primario:active{background:#082C45}
+  .btn-secundario{background:#fff;color:var(--azul);border-color:var(--azul)}
+  .btn small{display:block;font-weight:500;font-size:13px;opacity:.8;margin-top:3px}
+  .precos{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}
+  .preco{flex:1 1 240px;border:1px solid var(--linha);border-radius:var(--raio);padding:18px}
+  .preco strong{display:block;font-size:27px;line-height:1.1;margin:4px 0 8px}
+  .preco .rotulo{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--cinza)}
+  .preco.pro{border-color:var(--azul);background:#F7FBFD}
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:14px 0}
+  th,td{text-align:left;padding:9px 6px;border-bottom:1px solid var(--linha);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--cinza)}
+  .nota{font-size:14px;color:var(--cinza)}
+  details{border-bottom:1px solid var(--linha);padding:12px 0}
+  summary{font-weight:700;cursor:pointer;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";float:right;color:var(--azul-claro);font-weight:700}
+  details[open] summary::after{content:"–"}
+  details p{margin:10px 0 0;color:#33454F}
+  footer{background:var(--fundo);border-top:1px solid var(--linha);margin-top:44px;padding:26px 0 34px;font-size:13.5px;color:var(--cinza)}
+  .selo{display:inline-block;background:#EAF4EF;color:var(--verde);border-radius:20px;padding:4px 12px;font-size:12.5px;font-weight:700;margin-bottom:12px}
+  .contagem{font-size:12.5px;color:var(--cinza);margin-top:6px}
+  hr{border:0;border-top:1px solid var(--linha);margin:30px 0}
+  @media (max-width:420px){h1{font-size:25px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marca">OrçaClima</div>
+    <h1>A proposta que fecha o serviço, pronta em três minutos</h1>
+    <p>Para empresas de instalação e manutenção de ar-condicionado. Preencha uma vez, gere o PDF com a sua marca e envie no WhatsApp do cliente.</p>
+  </div>
+</header>
+
+<div class="faixa">
+  <div class="wrap"><span>⚠</span><span>Página nova, sem clientes ainda. O documento de exemplo abaixo é fictício e existe para você avaliar o formato antes de qualquer compra.</span></div>
+</div>
+
+<main class="wrap">
+
+  <a class="btn btn-primario" href="amostra/proposta-exemplo.pdf" id="baixar-amostra" rel="noopener">
+    Baixar a proposta de exemplo (PDF)
+    <small>1 página · empresa fictícia · sem cadastro</small>
+  </a>
+
+  <p class="nota">Abra no celular. Se o formato não resolver o seu problema, a página termina aqui — e você não gastou nada.</p>
+
+  <h2>O problema que isso resolve</h2>
+  <p>Quem instala ar-condicionado orça todo dia pelo WhatsApp: foto do aparelho, “fica em tanto”, e o cliente compara com outra empresa que mandou um documento com escopo, prazo e garantia.</p>
+  <p>Não é falta de preço. É falta de documento. E montar esse documento no Word, no celular, entre um serviço e outro, é o que ninguém faz.</p>
+
+  <h2>O que vem no kit</h2>
+  <div class="cartao destaque">
+    <ul class="lista">
+      <li><strong>Aplicativo offline</strong> que abre no navegador do celular ou do computador: você cadastra equipamentos, materiais, horas, deslocamento e margem, e ele calcula o preço.</li>
+      <li><strong>Proposta em PDF com a sua marca</strong>, com escopo, itens, condições, garantia, validade e campo de assinatura.</li>
+      <li><strong>Três modelos</strong>: instalação residencial, manutenção preventiva e contrato de manutenção trimestral.</li>
+      <li><strong>Tabela de preços</strong> pronta para imprimir e usar como referência no atendimento.</li>
+      <li><strong>Guia de 1 página</strong> para precificar sem confundir margem com markup.</li>
+    </ul>
+    <p class="nota" style="margin-bottom:0">Licença de uso para uma empresa. Arquivo único: não precisa instalar, não precisa de internet, não precisa de login.</p>
+  </div>
+
+  <h2>Como funciona</h2>
+  <table>
+    <tr><th>Passo</th><th>O que você faz</th></tr>
+    <tr><td>1</td><td>Cadastra seus preços de custo uma vez</td></tr>
+    <tr><td>2</td><td>Informa o serviço do cliente: aparelho, metros de tubulação, horas, deslocamento</td></tr>
+    <tr><td>3</td><td>Confere o preço e a margem real antes de enviar</td></tr>
+    <tr><td>4</td><td>Gera o PDF e envia no WhatsApp</td></tr>
+  </table>
+
+  <h2>Preço</h2>
+  <div class="precos">
+    <div class="preco">
+      <div class="rotulo">Kit</div>
+      <strong>R$ 197</strong>
+      <p class="nota" style="margin:0">Pagamento único. Aplicativo, 3 modelos, tabela de preços e guia. Atualizações por 12 meses.</p>
+    </div>
+    <div class="preco pro">
+      <div class="rotulo">Kit + personalização</div>
+      <strong>R$ 397</strong>
+      <p class="nota" style="margin:0">O kit com a sua marca, seus preços reais cadastrados e uma proposta sua montada como referência.</p>
+    </div>
+  </div>
+  <p class="nota">Preço de lançamento para as primeiras empresas. Não há assinatura e não há cobrança recorrente.</p>
+
+  <a class="btn btn-secundario" href="#" id="cta-pedido">Quero o kit</a>
+
+  <h2>Para quem é — e para quem não é</h2>
+  <div class="cartao">
+    <h3>Faz sentido se</h3>
+    <ul class="lista">
+      <li>Você instala ou mantém ar-condicionado e manda orçamento por WhatsApp.</li>
+      <li>Perde serviço para concorrente que apresenta documento mais organizado.</li>
+      <li>Não sabe se o preço que cobra cobre imposto, cartão e o seu tempo.</li>
+    </ul>
+    <h3>Não faz sentido se</h3>
+    <ul class="lista neg">
+      <li>Você já usa um sistema de gestão com proposta integrada e está satisfeito.</li>
+      <li>Precisa de emissão de nota fiscal, controle de estoque ou agenda de equipe: este kit não faz isso.</li>
+      <li>Procura curso, mentoria ou promessa de faturamento.</li>
+    </ul>
+  </div>
+
+  <h2>Perguntas diretas</h2>
+  <details>
+    <summary>Preciso instalar algum programa?</summary>
+    <p>Não. É um arquivo que abre no navegador. Pode ficar salvo no celular e no computador.</p>
+  </details>
+  <details>
+    <summary>Funciona sem internet?</summary>
+    <p>Sim. O cálculo e a geração do PDF acontecem no seu aparelho. Nada é enviado para servidor.</p>
+  </details>
+  <details>
+    <summary>Meus dados e os dados dos meus clientes ficam onde?</summary>
+    <p>Ficam salvos apenas no seu navegador, no seu aparelho. Você pode exportar um backup em arquivo e guardar onde quiser.</p>
+  </details>
+  <details>
+    <summary>Serve para outras empresas além de ar-condicionado?</summary>
+    <p>O cálculo serve para qualquer serviço com peças, mão de obra e deslocamento. Os modelos de texto são escritos para refrigeração. Se você trabalha com outro ramo, me diga antes de comprar.</p>
+  </details>
+  <details>
+    <summary>E se eu não gostar?</summary>
+    <p>Sete dias para pedir reembolso integral, sem justificativa. Basta uma mensagem.</p>
+  </details>
+  <details>
+    <summary>Isso substitui um responsável técnico?</summary>
+    <p>Não. O kit organiza a proposta comercial. Responsabilidade técnica, ART e conformidade com normas continuam sendo do profissional habilitado.</p>
+  </details>
+
+  <hr>
+  <p class="nota" id="status-canal">Canal de pedido: em definição.</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Transparência:</strong> esta é uma operação nova, sem clientes e sem depoimentos. Nenhum número de vendas é exibido porque ainda não houve venda.</p>
+    <p>Os documentos de exemplo usam empresa, cliente e CNPJ fictícios. Nada nesta página promete faturamento ou resultado financeiro.</p>
+    <p class="contagem" id="contagem"></p>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+ * CONFIGURAÇÃO DO CANAL DE PEDIDO
+ * Preencher UMA das opções. Enquanto vazio, usa o canal provisório.
+ * whatsapp: apenas dígitos, com 55 e DDD. Ex.: "5511999999999"
+ * email:    endereço comercial
+ * ------------------------------------------------------------------ */
+var CONFIG = {
+  whatsapp: "",
+  email: "",
+  canalProvisorio: "https://github.com/Onirico-Dev/orcaclima/issues/new?title=Quero%20o%20kit%20Or%C3%A7aClima&body=Empresa%3A%0ACidade%3A%0AQual%20kit%3A%20(KIT%20197)%20ou%20(KIT%2BPERSONALIZA%C3%87%C3%83O%20397)"
+};
+
+var CONTADOR = "https://abacus.jasoncameron.dev/hit/orcaclima2026/";
+
+function contar(chave) {
+  try {
+    fetch(CONTADOR + chave, { mode: "cors", keepalive: true }).catch(function () {});
+  } catch (e) {}
+}
+
+function montarCta() {
+  var botao = document.getElementById("cta-pedido");
+  var status = document.getElementById("status-canal");
+  var texto = "Olá! Quero o kit OrçaClima. Empresa: ___ Cidade: ___ Kit: ( ) 197 ( ) 397";
+  if (CONFIG.whatsapp) {
+    botao.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(texto);
+    botao.target = "_blank";
+    botao.rel = "noopener";
+    status.textContent = "Pedido por WhatsApp. Resposta em horário comercial.";
+  } else if (CONFIG.email) {
+    botao.href = "mailto:" + CONFIG.email + "?subject=" + encodeURIComponent("Pedido do kit OrçaClima") + "&body=" + encodeURIComponent(texto);
+    status.textContent = "Pedido por e-mail.";
+  } else {
+    botao.href = CONFIG.canalProvisorio;
+    botao.target = "_blank";
+    botao.rel = "noopener";
+    status.textContent = "Canal provisório de teste: o pedido é registrado em formulário público enquanto o canal definitivo é configurado.";
+  }
+}
+
+contar("visita");
+montarCta();
+
+document.getElementById("baixar-amostra").addEventListener("click", function () { contar("amostra"); });
+document.getElementById("cta-pedido").addEventListener("click", function () { contar("pedido"); });
+
+fetch("https://abacus.jasoncameron.dev/get/orcaclima2026/visita")
+  .then(function (r) { return r.json(); })
+  .then(function (d) {
+    if (d && typeof d.value === "number") {
+      document.getElementById("contagem").textContent =
+        "Visitas registradas nesta página: " + d.value + " (contador público, sem cookies e sem identificar ninguém).";
+    }
+  })
+  .catch(function () {});
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Kit OrçaClima",
+  "description": "Modelos de proposta comercial, gerador offline de orçamento, tabela de preços e contrato de manutenção para empresas de instalação e manutenção de ar-condicionado.",
+  "brand": { "@type": "Brand", "name": "OrçaClima" },
+  "offers": {
+    "@type": "Offer",
+    "price": "197.00",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock",
+    "url": "https://onirico-dev.github.io/orcaclima/"
+  }
+}
+</script>
+</body>
+</html>
