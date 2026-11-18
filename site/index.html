@@ -204,7 +204,7 @@ var CONFIG = {
   canalProvisorio: "https://github.com/Onirico-Dev/orcaclima/issues/new?title=Quero%20o%20kit%20Or%C3%A7aClima&body=Empresa%3A%0ACidade%3A%0AQual%20kit%3A%20(KIT%20197)%20ou%20(KIT%2BPERSONALIZA%C3%87%C3%83O%20397)"
 };
 
-var CONTADOR = "https://abacus.jasoncameron.dev/hit/orcaclima2026/";
+var CONTADOR = "https://abacus.jasoncameron.dev/hit/orcaclima-f0/";
 
 function contar(chave) {
   try {
@@ -238,7 +238,7 @@ montarCta();
 document.getElementById("baixar-amostra").addEventListener("click", function () { contar("amostra"); });
 document.getElementById("cta-pedido").addEventListener("click", function () { contar("pedido"); });
 
-fetch("https://abacus.jasoncameron.dev/get/orcaclima2026/visita")
+fetch("https://abacus.jasoncameron.dev/get/orcaclima-f0/visita")
   .then(function (r) { return r.json(); })
   .then(function (d) {
     if (d && typeof d.value === "number") {
