@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onirico-dev.github.io/orcaclima/sitemap.xml
