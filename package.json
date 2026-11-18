@@ -1,13 +1,18 @@
 {
   "name": "orcaclima",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proposta e orcamento offline para empresas de ar-condicionado",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test app/motor.test.js",
+    "pdf": "node scripts/gerar-proposta-exemplo.js",
+    "verificar": "python3 scripts/verificar-pdf.py",
+    "painel": "node scripts/gerar-painel.js",
+    "evidencias": "bash scripts/verificar-f0.sh",
+    "publicar": "bash scripts/publicar.sh"
   },
   "keywords": [],
   "type": "commonjs",

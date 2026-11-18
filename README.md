@@ -15,7 +15,9 @@ instalação e manutenção de ar-condicionado. O produto é um arquivo que roda
 - Proposta-modelo em PDF: gerada e verificada estruturalmente (1 página, conteúdo dentro da folha).
 - Página de oferta: publicada em https://onirico-dev.github.io/orcaclima/ (pré-lançamento).
 - Instrumentação de demanda: contadores públicos de visita, download e clique.
-- Receita realizada: **R$ 0,00**. Nenhuma venda. Nenhum interessado registrado até o fechamento deste relatório.
+- Receita realizada: **R$ 0,00**. Nenhuma venda. Nenhum interessado registrado.
+- Veredito da F0: **não validada** — ver `registros/f0-relatorio.md`.
+- Evidências brutas: `registros/evidencias-f0.txt`.
 - Gasto realizado: **R$ 0,00**.
 
 ## Estrutura
@@ -32,11 +34,12 @@ scripts/     geração do PDF, verificação, painel e publicação
 ## Comandos
 
 ```bash
-node --test app/motor.test.js          # testes do motor
-node scripts/gerar-proposta-exemplo.js # regenera o PDF da amostra
-python3 scripts/verificar-pdf.py       # verifica layout e blocos do PDF
-node scripts/gerar-painel.js           # regenera o painel financeiro
-bash scripts/publicar.sh "mensagem"    # publica no GitHub via API
+npm test          # testes do motor
+npm run pdf        # regenera o PDF da amostra
+npm run verificar  # verifica layout e blocos do PDF
+npm run painel     # regenera o painel financeiro
+npm run evidencias # coleta provas da F0
+npm run publicar -- "mensagem"  # publica no GitHub via API
 ```
 
 O ambiente bloqueia `git push`; a publicação é feita por `scripts/publicar.sh`, que cria os

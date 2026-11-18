@@ -1,5 +1,5 @@
 EVIDENCIAS F0 — OrçaClima
-coletado em: 2026-11-18T15:42:14Z (UTC)
+coletado em: 2026-11-18T17:11:43Z (UTC)
 diretorio: /data/data/com.termux/files/home/criador-universal/projetos/orcaclima
 
 == ambiente ==
@@ -33,14 +33,18 @@ bytes: 3837
   md5 local:    b842f4ba3ed87a440ede1fc1aaad22df
   md5 servido:  b842f4ba3ed87a440ede1fc1aaad22df
 
-== contadores de demanda (abacus) ==
-  visita: {"error":"Failed to get data. Try again later."}
-  amostra: {"error":"Failed to get data. Try again later."}
-  pedido: {"error":"Failed to get data. Try again later."}
+== contadores de demanda (hits.sh) ==
+  atencao: a leitura do contador tambem incrementa 1. O valor exibido ja inclui essa leitura.
+  contador/visita: 3
+  contador/amostra: 1
+  contador/pedido: 1
+
+== trafego do repositorio (API GitHub, janela de 14 dias) ==
+  visualizacoes: 0 | visitantes unicos: 0
 
 == repositorio ==
   visibilidade: public | pages: true
-  ultimo commit local: d616cac Contadores de demanda em namespace limpo para F0
+  ultimo commit local: 2368251 Troca contador por hits.sh, remove duplicata do site e atualiza verificacao
 
 == financeiro ==
   painel gerado: /data/data/com.termux/files/home/criador-universal/projetos/orcaclima/financeiro/painel.html
